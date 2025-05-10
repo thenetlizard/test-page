@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Page</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/style.css">
+
 </head>
+
 <body>
-    <div class="form-head">
-        <div class="logo">logo</div>
-        <div class="title-content">On-Site Enquiries Form</div>
+
+    <div class="container">
+        <div class="form-head">
+            <div class="logo">logo</div>
+            <div class="title-content">On-Site Enquiries Form</div>
+        </div>
+
+        <div class="form-content">
+            <form action="" method="POST" id="thisform">
+                <label for="fullname">Full Name *</label><br>
+                <input type="text" name="fullname" id="fullname" required><br><br>
+
+                <label for="email">Email *</label><br>
+                <input type="email" name="email" id="email" required><br><br>
+
+                <label for="phone">Phone</label><br>
+                <input type="number" name="phone" id="phone"><br><br>
+
+                <label for="address">Address</label><br>
+                <input type="text" name="address" id="address"><br><br>
+
+                <input type="submit" value="submit">
+            </form>
+        </div>
     </div>
 
-    <div class="form-content">
-        <form action="" method="POST">
-            <label for="full-name">Full Name *</label><br>
-            <input type="text" name="" id=""><br><br>
-
-            <label for="email">Email *</label><br>
-            <input type="email" name="" id=""><br><br>
-
-            <label for="phone">Phone</label><br>
-            <input type="number" name="" id=""><br><br>
-
-            <label for="address">Address</label><br>
-            <input type="text" name="" id=""><br><br>
-
-            <input type="submit" value="submit">
-        </form>
-    </div>
-    
+<script src="assets/main.js"></script>
 </body>
+
 </html>
